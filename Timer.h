@@ -20,17 +20,14 @@ namespace {
             std::cout << msg; return *this;
         }
 
-        Counter &operator<<(Counter &(&modifier)(Counter &)) noexcept {
-            return modifier(*this); }
+        Counter &operator<<(Counter &(&modifier)(Counter &)) noexcept { return modifier(*this); }
     };
 }
 
 namespace Timer {
     inline Counter out;
-    Counter& init() noexcept {
-        Timer::out = Counter(); return out; }
-    Counter& endl(Counter& counter) noexcept {
-        counter.newLine = true; std::cout << std::endl; return counter; }
+    Counter& init() noexcept { Timer::out = Counter(); return out; }
+    Counter& endl(Counter& counter) noexcept { counter.newLine = true; std::cout << std::endl; return counter; }
 }
 
 #endif //SIMPLE_STREAM_TIMER_H

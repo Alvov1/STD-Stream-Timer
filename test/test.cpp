@@ -4,7 +4,7 @@
 #include <thread>
 #include <regex>
 
-TEST(Display, Zero) {
+TEST(MainTest, COut) {
     std::stringstream buffer;
     std::streambuf* oldCout = std::cout.rdbuf(buffer.rdbuf());
 
