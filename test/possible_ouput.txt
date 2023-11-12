@@ -1,0 +1,3 @@
+[0 ms] Hello, World!
+[2502 ms] Were here after 2,5 seconds.
+[3257 ms] And here we are after 0,75 seconds more.
