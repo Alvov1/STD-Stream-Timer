@@ -22,7 +22,7 @@ Timer::out << "And here we are after 0,75 seconds more." << Timer::endl;
 ```cmake
 include(FetchContent)
 FetchContent_Declare(STDStreamTimer
-        GIT_REPOSITORY https://github.com/Alvov1/STD-Stream-Timer
+        GIT_REPOSITORY https://github.com/Alvov1/STD-Stream-Timer.git
         GIT_TAG main
 )
 FetchContent_MakeAvailable(STDStreamTimer)
