@@ -27,6 +27,6 @@ FetchContent_Declare(STDStreamTimer
 )
 FetchContent_MakeAvailable(STDStreamTimer)
 
-target_include_directories(DivisorSelectionProgressive PRIVATE ${STDStreamTimer_SOURCE_DIR})
+target_include_directories(Target PRIVATE ${STDStreamTimer_SOURCE_DIR})
 ```
 

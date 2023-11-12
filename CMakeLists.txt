@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.26)
 set(CMAKE_CXX_STANDARD 20)
-project(SimpleStreamTimerTesting)
+project(STDStreamTimerTesting)
 
 include(FetchContent)
 FetchContent_Declare(
@@ -10,9 +10,9 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 enable_testing()
 
-add_executable(SimpleStreamTimerTesting test/test.cpp)
-target_link_libraries(SimpleStreamTimerTesting GTest::gtest_main)
+add_executable(STDStreamTimerTesting test/test.cpp)
+target_link_libraries(STDStreamTimerTesting GTest::gtest_main)
 include(GoogleTest)
-gtest_discover_tests(SimpleStreamTimerTesting)
+gtest_discover_tests(STDStreamTimerTesting)
 
-add_library(SimpleStreamTimer INTERFACE)
+add_library(STDStreamTimer INTERFACE)
