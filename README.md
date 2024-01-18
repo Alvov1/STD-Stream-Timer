@@ -5,9 +5,9 @@ A simple header-only C++ library for counting time elapsed since the beginning o
 ```cpp
 Timer::init() << "Hello, World!" << Timer::endl;
 std::this_thread::sleep_for(std::chrono::milliseconds(2500));
-Timer::out << "Were here after 2,5 seconds." << Timer::endl;
+Timer::out << "We were here in 2.5 seconds." << Timer::endl;
 std::this_thread::sleep_for(std::chrono::milliseconds(750));
-Timer::out << "And here we are after 0,75 seconds more." << Timer::endl;
+Timer::out << "And then another 0.75 seconds passed." << Timer::endl;
 ```
 
 #### Output:
